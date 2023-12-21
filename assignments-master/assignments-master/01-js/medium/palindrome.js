@@ -4,7 +4,7 @@
 */
 
 function isPalindrome(str) {
-  let str1 = str.toLowercase();  
+  let str1 = str.toLowerCase();  
   let str2 = str.split('').reverse().join('');
   if (str1 === str2){
     return true;
