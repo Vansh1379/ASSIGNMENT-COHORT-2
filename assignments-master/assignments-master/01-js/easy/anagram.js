@@ -5,9 +5,9 @@
 */
 
 function isAnagram(str1, str2) {
-  let stra = str1.sort();
-  let strb = str2.sort();
-  if(str1 === str2){
+  let stra = str1.split('').sort().join('');
+  let strb = str2.split('').sort().join('');
+  if(stra === strb){
     return true;
   }
   else{
