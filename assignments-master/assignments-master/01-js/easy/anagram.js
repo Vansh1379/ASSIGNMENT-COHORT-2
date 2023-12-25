@@ -5,14 +5,9 @@
 */
 
 function isAnagram(str1, str2) {
-  let stra = str1.split('').sort().join('');
-  let strb = str2.split('').sort().join('');
-  if(stra === strb){
-    return true;
-  }
-  else{
-    return false;
-  }
+  let str1 = str1.split('').sort().join('');
+  let str2 = str2.split('').sort().join('');
+  return (str1 = str2);
 }
 
 module.exports = isAnagram;
