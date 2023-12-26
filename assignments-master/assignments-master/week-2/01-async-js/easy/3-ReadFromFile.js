@@ -11,8 +11,13 @@ function ReadFile(){
     return p;
 }
 
-function print(data){
-    console.log(data);
+async function print(){
+    let value = await ReadFile();
+    console.log(value);
 }
 
-ReadFile().then(print);
+// function print(data){
+//     console.log(data);
+// }
+
+// ReadFile().then(print);
