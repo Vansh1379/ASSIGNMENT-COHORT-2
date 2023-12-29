@@ -5,7 +5,11 @@
  */
 
 function wait1(t) {
-
+    return new promise((res,rej)=>{
+        setTimeout(()=>{
+            
+        },t*1000);
+    })
 }
 
 function wait2(t) {
