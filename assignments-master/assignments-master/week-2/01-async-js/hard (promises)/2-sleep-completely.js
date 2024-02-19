@@ -147,13 +147,14 @@ Let me know if this helps explain what that while loop is doing on each iteratio
  */
 
 function sleep(milliseconds) {
-    return new Promise((resolve)=>{
+    let p = new Promise((resolve)=>{
         const start = Date.now();
         while(Date.now()-start<milliseconds){
 
         }
         resolve();
-    })
+    });
+    return p;
 }
 
 module.exports = sleep;
