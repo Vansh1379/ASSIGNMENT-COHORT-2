@@ -24,7 +24,7 @@ app.use((req, res, next)=>{
     if(numberOfRequestsForUser[userId]){
       numberOfRequestsForUser[userId]++;
       if(numberOfRequestsForUser[userId]>5){
-        res.status(400).send("no-entry");
+        res.status(404).send("no-entry");
       }else{
         next();
       }
