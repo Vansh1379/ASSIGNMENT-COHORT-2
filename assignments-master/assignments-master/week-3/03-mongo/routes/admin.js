@@ -1,9 +1,10 @@
-const { Router } = require("express");
+const express = require("express");
 const adminMiddleware = require("../middleware/admin");
-const router = Router();
+const { Admin, Course } = require("../db");
+const router = express.Router();
 
 // Admin Routes
-router.post('/signup', asynsc (req, res) => {
+router.post('/signup', async (req, res) => {
     // Implement admin signup logic
     const username = req.body.username;
     const password = req.body.password;
@@ -13,7 +14,8 @@ router.post('/signup', asynsc (req, res) => {
         password : password
     })
     res.json({
-        
+        "message": "User created successfully",
+                    "status": "success"
     })
 });
 
