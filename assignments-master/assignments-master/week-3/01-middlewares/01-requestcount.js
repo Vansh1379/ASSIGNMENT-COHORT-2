@@ -16,6 +16,7 @@ app.use((req, res, next)=>{
   console.log(requestCount);
   next();
 });
+
 app.get('/user', function(req, res) {
   res.status(200).json({ name: 'john' });
 });

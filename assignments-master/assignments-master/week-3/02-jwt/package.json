@@ -1,6 +1,7 @@
 {
   "name": "02-jwt",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +12,5 @@
   "dependencies": {
     "jsonwebtoken": "^9.0.2",
     "zod": "^3.22.4"
-  },
-  "directories": {
-    "test": "tests"
-  },
-  "description": ""
+  }
 }

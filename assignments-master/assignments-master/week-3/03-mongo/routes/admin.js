@@ -3,15 +3,25 @@ const adminMiddleware = require("../middleware/admin");
 const router = Router();
 
 // Admin Routes
-app.post('/signup', (req, res) => {
+router.post('/signup', asynsc (req, res) => {
     // Implement admin signup logic
+    const username = req.body.username;
+    const password = req.body.password;
+    // now we will check if the user exists in the database
+    await Admin.create({
+        username :username,
+        password : password
+    })
+    res.json({
+        
+    })
 });
 
-app.post('/courses', adminMiddleware, (req, res) => {
+router.post('/courses', adminMiddleware, (req, res) => {
     // Implement course creation logic
 });
 
-app.get('/courses', adminMiddleware, (req, res) => {
+router.get('/courses', adminMiddleware, (req, res) => {
     // Implement fetching all courses logic
 });
 
