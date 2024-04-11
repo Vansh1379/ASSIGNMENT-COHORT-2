@@ -4,12 +4,12 @@ const userMiddleware = require("../middleware/user");
 const { User, Course } = require("../db");
 const { default: mongoose } = require("mongoose");
 // User Routes
-router.post('/signup',  (req, res) => {
+router.post('/signup',  async (req, res) => {
     // Implement user signup logic
     const username = req.body.username;
     const password = req.body.password;
 // now we will check if the user already exists 
-     User.create({
+     await User.create({
         username : username,
         password : password
     })
