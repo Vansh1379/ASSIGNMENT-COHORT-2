@@ -19,8 +19,24 @@ router.post('/signup', async (req, res) => {
     })
 });
 
-router.post('/courses', adminMiddleware, (req, res) => {
+router.post('/courses', adminMiddleware, async (req, res) => {
     // Implement course creation logic
+    const tittle = req.body.tittle;
+    const description = req.body.description;
+    const imageLink = req.body.imageLink;
+    const price = req.body.price;
+    // but in real world we do zod validation
+    const newCourse = await Course.create({
+        tittle : tittle,
+        description : description,
+        imageLink : imageLink,
+        price : price
+    })
+    res.json({
+        "message": "Course created successfully",
+                    "status": "success",
+                    courseID : newCourse._id
+    })
 });
 
 router.get('/courses', adminMiddleware, (req, res) => {
