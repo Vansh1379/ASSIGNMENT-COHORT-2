@@ -9,7 +9,8 @@ function userMiddleware(req, res, next) {
         User.findOne({
             username : username,
             password : password 
-        }) .then((vaule)=>{
+        }) 
+        .then(function(value){
             if(value){
                 next();
             } else{
