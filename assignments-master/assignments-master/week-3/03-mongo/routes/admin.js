@@ -10,12 +10,12 @@ router.post('/signup', async (req, res) => {
     const password = req.body.password;
     // now we will check if the user exists in the database
     await Admin.create({
-        username :username,
-        password : password
+        username: username,
+        password: password
     })
     res.json({
         "message": "User created successfully",
-                    "status": "success"
+        "status": "success"
     })
 });
 
@@ -27,24 +27,24 @@ router.post('/courses', adminMiddleware, async (req, res) => {
     const price = req.body.price;
     // but in real world we do zod validation
     const newCourse = await Course.create({
-        tittle : tittle,
-        description : description,
-        imageLink : imageLink,
-        price : price
+        tittle: tittle,
+        description: description,
+        imageLink: imageLink,
+        price: price
     })
     res.json({
         "message": "Course created successfully",
-                    "status": "success",
-                    courseID : newCourse._id
+        "status": "success",
+        courseID: newCourse._id
     })
 });
 
 router.get('/courses', adminMiddleware, async (req, res) => {
     // Implement fetching all courses logic
-   const response =  await Course.find({ });
+    const response = await Course.find({});
     res.json({
         "status": "success",
-                    courses : response
+        todo: response
     })
 });
 
