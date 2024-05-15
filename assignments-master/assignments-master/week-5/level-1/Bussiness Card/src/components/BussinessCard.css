@@ -1,0 +1,7 @@
+.BussinessCard {
+    border: 1px solid rgb(172, 20, 20);
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(209, 33, 95, 0.5);
+}
