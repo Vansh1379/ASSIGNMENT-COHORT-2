@@ -10,7 +10,10 @@ export function Assignment1() {
     // Your solution ends here
 
     return (
+
         <div>
+
+            
             <input 
                 type="number" 
                 value={input} 
