@@ -1,5 +1,7 @@
 export function Card() {
     return (
-        
+        <>
+
+        </>
     );
 }
