@@ -1,10 +1,12 @@
+import { Body } from "./Body";
 import { Fotter } from "./Fotter";
 import { Header } from "./Header";
+import "./Card.css"
 
 export function Card() {
     return (
-        <>
-            <Fotter />
-        </>
+        <div className="Card">
+            <Body />
+        </div>
     );
 }

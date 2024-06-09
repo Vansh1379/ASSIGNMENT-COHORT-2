@@ -1,0 +1,15 @@
+.Body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.lol {
+    background-color: grey;
+    width: 400px;
+}
+
+.phu {
+    padding-left: 150px;
+}
