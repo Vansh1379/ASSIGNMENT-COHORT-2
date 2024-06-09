@@ -1,0 +1,7 @@
+.Fotter {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+}
