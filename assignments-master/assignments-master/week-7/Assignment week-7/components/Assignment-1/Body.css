@@ -3,7 +3,10 @@
     justify-content: space-evenly;
 }
 
-.location {}
+.Location {
+    margin: 0;
+    padding: 0;
+}
 
 .lol {
     background-color: grey;

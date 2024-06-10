@@ -1,3 +1,13 @@
-.Card {
-    width: 400px;
+.Hed {
+    background-attachment: fixed;
+}
+
+.Foot {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.Bod {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
