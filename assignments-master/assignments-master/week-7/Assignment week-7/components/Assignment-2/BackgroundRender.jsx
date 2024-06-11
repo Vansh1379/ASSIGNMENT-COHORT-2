@@ -1,8 +1,9 @@
 import { Button } from "./Button";
+import "./BackgroundRender.css"
 
 export function BackgroundRender() {
     return (
-        <div>
+        <div className="Background">
             <Button color="red" />
             <Button color="Yellow" />
             <Button color="Balck" />

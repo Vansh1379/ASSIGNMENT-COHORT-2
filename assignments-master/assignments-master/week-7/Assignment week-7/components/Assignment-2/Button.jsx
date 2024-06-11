@@ -1,7 +1,9 @@
+import "./Button.css"
+
 export function Button({ color }) {
     return (
         <div>
-            <button>{color}</button>
+            <button className="Button">{color}</button>
         </div>
     );
 }
