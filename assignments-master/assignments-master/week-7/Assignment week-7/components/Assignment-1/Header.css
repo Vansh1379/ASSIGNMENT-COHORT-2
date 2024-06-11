@@ -1,5 +1,10 @@
 .header {
     height: 100px;
     width: 400px;
-    background-color: aqua;
+}
+
+.img {
+    background-image: url('Header.png');
+    height: 100px;
+    width: 400px;
 }

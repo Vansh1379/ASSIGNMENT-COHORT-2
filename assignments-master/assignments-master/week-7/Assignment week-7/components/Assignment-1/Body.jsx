@@ -4,11 +4,11 @@ export function Body() {
     return (
         <div className="lol">
             <div className="Body">
-                <h2>Ishita</h2>
-                <p>18</p>
+                <h2 className="ish">Ishita</h2>
+                <h2 className="age">18</h2>
             </div>
             <div className="Location">
-                <p className="phu">IIR Roorkee</p>
+                <p className="phu">IIT Roorkee</p>
             </div>
         </div>
     );
