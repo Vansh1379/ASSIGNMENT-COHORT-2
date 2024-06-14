@@ -7,7 +7,6 @@ export function BackgroundRender() {
             <Button color="red" className="red" />
             <Button color="Yellow" />
             <Button color="Balck" />
-            <Button />
             <Button color="Purple" />
             <Button color="green" />
             <Button color="blue" />

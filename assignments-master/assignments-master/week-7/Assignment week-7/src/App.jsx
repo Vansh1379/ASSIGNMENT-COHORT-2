@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='maje'>
-      <Card />
+      <BackgroundRender />
     </div>
   )
 }

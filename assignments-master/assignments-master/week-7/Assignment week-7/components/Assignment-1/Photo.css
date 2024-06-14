@@ -1,11 +1,13 @@
-.pho {
+img {
     border-radius: 50%;
     background-image: url('Photo.png');
+    background-repeat: no-repeat;
     height: 100px;
     width: 100px;
     margin-left: 150px;
-    object-fit: cover;
+    object-fit: none;
     position: absolute;
+    overflow: hidden;
     top: 9%;
     right: 46%;
 }
