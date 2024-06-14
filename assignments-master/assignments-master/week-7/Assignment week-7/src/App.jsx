@@ -6,9 +6,9 @@ import { BackgroundRender } from '../components/Assignment-2/BackgroundRender'
 function App() {
 
   return (
-    <div className='maje'>
-      <BackgroundRender />
-    </div>
+    <span className='maje'>
+      <Card />
+    </span>
   )
 }
 

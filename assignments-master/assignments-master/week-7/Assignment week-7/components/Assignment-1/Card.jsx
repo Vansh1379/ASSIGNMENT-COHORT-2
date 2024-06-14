@@ -6,13 +6,13 @@ import { Photo } from "./Photo";
 
 export function Card() {
     return (
-        <div className="Card">
-            <div>
+        <span className="Card">
+            <span>
                 <Header className="Head" > </Header>
                 <Photo />
                 <Body className="Bod" />
                 <Fotter className="Foot" />
-            </div>
-        </div>
+            </span>
+        </span>
     );
 }

@@ -1,4 +1,5 @@
 import img from "../../src/assets/images/Photo.png"
+import "./Photo.css"
 
 export function Photo() {
     return (
