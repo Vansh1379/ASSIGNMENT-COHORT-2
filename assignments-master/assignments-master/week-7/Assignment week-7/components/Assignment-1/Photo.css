@@ -5,4 +5,7 @@
     width: 100px;
     margin-left: 150px;
     object-fit: cover;
+    position: absolute;
+    top: 9%;
+    right: 46%;
 }

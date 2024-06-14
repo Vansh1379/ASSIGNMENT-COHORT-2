@@ -1,22 +1,25 @@
 .Body {
     display: flex;
-
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-.ish {
-    padding-left: 150px;
-}
 
 .age {
     font-weight: 100;
     margin-left: 5px;
 }
 
-.lol {
-    border-bottom: 1px solid black;
-    background-color: white width 400px;
+.ish {
+    margin: 0;
 }
 
-.phu {
-    padding-left: 150px;
+.lol {
+    padding: 20px;
+    border-bottom: 1px solid black;
+    background-color: white width 400px;
 }
