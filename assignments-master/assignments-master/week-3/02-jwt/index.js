@@ -20,8 +20,8 @@ function signJwt(username, password) {
     const usernameSchema = userSchema.safeParse(username);
     const passwordSchemaResponse = passwordSchema.safeParse(password);
 
-    if(!usernameSchema.success || !passwordSchemaResponse.success){
-        return null; 
+    if (!usernameSchema.success || !passwordSchemaResponse.success) {
+        return null;
     }
 
     const response = jwt.sign({
@@ -39,7 +39,9 @@ function signJwt(username, password) {
  */
 function verifyJwt(token) {
     // Your code here
+    try {
 
+    }
 }
 
 /**
@@ -51,7 +53,10 @@ function verifyJwt(token) {
  */
 function decodeJwt(token) {
     // Your code here
-
+    const decoded = jwt.decode(token);
+    if (decoded.success) {
+        return decoded;
+    }
 }
 
 
