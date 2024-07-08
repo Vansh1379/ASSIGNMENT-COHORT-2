@@ -40,7 +40,11 @@ function signJwt(username, password) {
 function verifyJwt(token) {
     // Your code here
     try {
-
+        const verified = jwt.verify(token, jwtPassword);
+        return true;
+    }
+    catch(err) {
+        return false;
     }
 }
 
