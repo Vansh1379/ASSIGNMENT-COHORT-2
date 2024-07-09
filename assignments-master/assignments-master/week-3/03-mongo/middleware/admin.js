@@ -7,7 +7,20 @@ function adminMiddleware(req, res, next) {
     // vanshkalra@gmail.com
     const password = req.headers.password;
     // 123456
-   
+   Admin.findOne({
+    username : username,
+    password : password
+   })
+   .then(value)=>{
+        if(value){
+            next();
+        }
+        else{
+            req.status(403).json({
+                msg: "user not found",  
+            })
+        }
+   }
 }
 
 module.exports = adminMiddleware;
