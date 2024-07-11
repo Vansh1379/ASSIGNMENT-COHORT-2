@@ -14,18 +14,17 @@ router.post('/signup', async (req, res) => {
     Admin.Create({
         username,
         password
-    })
-    .then(admin)=>{
+    }).then((admin) => {
         res.json({
             msg: "Admin created succesfully"
         })
         next();
-    }
-    .catch(err)=>{
-        res.json({
-            msg:"Admin not created"
+    })
+        .catch((err) => {
+            res.json({
+                msg: "Admin not created"
+            })
         })
-    }
 });
 
 router.post('/courses', adminMiddleware, async (req, res) => {
@@ -43,7 +42,7 @@ router.post('/courses', adminMiddleware, async (req, res) => {
     })
     res.json({
         msg: " Course created Successfully",
-        courseID : newCourse._id
+        courseID: newCourse._id
     })
 });
 
@@ -52,12 +51,12 @@ router.get('/courses', adminMiddleware, async (req, res) => {
     Course.find({
 
     })
-    .then({
-        res.json({
+        .then(
+            res.json({
 
-            Course : response
-        })
-    })
+                Course: response
+            })
+        )
 });
 
 module.exports = router;
