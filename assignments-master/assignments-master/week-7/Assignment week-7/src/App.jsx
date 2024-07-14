@@ -7,7 +7,7 @@ function App() {
 
   return (
     <span className='maje'>
-      <Card />
+      <BackgroundRender />
     </span>
   )
 }

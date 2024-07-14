@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Button.css";
 
-export function Button({ color }) {
+export function Button({ id, color }) {
     const [currentColor, setCurrentColor] = useState('cream');
 
     const handleClick = () => {
