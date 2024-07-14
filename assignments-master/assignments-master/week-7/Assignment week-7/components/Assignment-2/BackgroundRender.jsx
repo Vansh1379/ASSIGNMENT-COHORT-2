@@ -28,7 +28,6 @@ export function BackgroundRender() {
     return (
         <div className="Background">
             {background.map((background) => (<button key={background.id} color={background.color} />))}
-            <Button color="default" />
         </div>
     );
 }
