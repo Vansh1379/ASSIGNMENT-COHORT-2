@@ -10,3 +10,9 @@
     background-color: black;
     color: white;
 }
+
+.movediv {
+    position: absolute;
+    top: 0px;
+    left: 38%;
+}
