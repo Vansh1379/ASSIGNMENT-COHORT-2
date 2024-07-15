@@ -1,14 +1,14 @@
 import './App.css'
 import { Card } from '../components/Assignment-1/Card'
 import { BackgroundRender } from '../components/Assignment-2/BackgroundRender'
+import { ParaGenerator } from '../components/Assignment-3/ParaGenerator'
 
 function App() {
-
   return (
-    <span className='maje'>
-      
-    </span>
-  )
+    <div>
+      <ParaGenerator />
+    </div>
+  );
 }
 
-export default App
+export default App;
