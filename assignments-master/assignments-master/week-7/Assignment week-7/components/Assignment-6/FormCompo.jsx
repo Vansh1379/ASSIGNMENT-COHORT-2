@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./FormCompo.css"
+import { OtpInput } from "./OtpInput";
 
 export function FromComponent() {
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -33,6 +34,7 @@ export function FromComponent() {
                 <button type="submit">Submit</button>
             </form> : <div>
                 <h1>Enter OTP Sent to {phoneNumber}</h1>
+                <OtpInput />
             </div>}
         </div>
     )
