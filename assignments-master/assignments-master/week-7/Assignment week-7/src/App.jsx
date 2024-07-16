@@ -6,7 +6,7 @@ import { GithubInfoCard } from '../components/Assignment-5/GithubInfoCard';
 
 function App() {
   return (
-    <div className='github'>
+    <div>
       <GithubInfoCard />
     </div>
   );

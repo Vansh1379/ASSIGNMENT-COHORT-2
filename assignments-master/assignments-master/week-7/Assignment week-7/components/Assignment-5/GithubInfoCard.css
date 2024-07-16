@@ -1,0 +1,17 @@
+.InfoCard {
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+}
+
+.heading {
+    height: 35px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    font-style: inherit;
+    border-bottom: 1px dotted black;
+}
