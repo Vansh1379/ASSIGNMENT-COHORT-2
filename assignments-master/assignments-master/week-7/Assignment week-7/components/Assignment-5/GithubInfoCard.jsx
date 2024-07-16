@@ -4,6 +4,8 @@ import "./GithubInfoCard.css"
 
 export function GithubInfoCard() {
 
+    const [InputValue, setInputvalue] = useState();
+
     const [Username, setUsername] = useState();
     const [User, setUser] = useState();
     const [Userid, setUserid] = useState();
@@ -14,7 +16,9 @@ export function GithubInfoCard() {
     const [UserFollowing, setUserFollowing] = useState();
 
     useEffect(() => {
-        axios.get("https://api.github.com/users/Vansh1379")
+
+        const URL = `https://api.github.com/users/${InputValue}`;
+        axios.get(URL)
             .then((response) => {
                 console.log(response.data);
                 setUsername(response.data.name);
@@ -26,12 +30,15 @@ export function GithubInfoCard() {
                 setUserFollowers(response.data.followers);
                 setUserFollowing(response.data.following);
             })
-    }, []);
+    }, [InputValue]);
 
     return (
         <div className="InfoCard">
             <h1 className="heading">Github Info Card</h1>
-            <input type="text" name="" placeholder="Enter Github Username" id="" />
+            <input type="text" name="InputBOX" placeholder="Enter Github Username" id="inputBox" onChange={(e) => {
+                setInputvalue(e.target.value);
+            }} />
+            <button className="search">Search</button>
             <h3 className="info">Username :- {User}</h3>
             <h3 className="info">Nmae :- {Username}</h3>
             <h3 className="info">User Id :- {Userid}</h3>

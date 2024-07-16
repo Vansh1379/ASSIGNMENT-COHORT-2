@@ -1,7 +1,7 @@
 .InfoCard {
     border: 1px solid white;
     border-radius: 10px;
-    height: 400px;
+    height: 450px;
     width: 500px;
     position: absolute;
     top: 15%;
@@ -18,4 +18,14 @@
 
 .info {
     padding-left: 25px;
+}
+
+#inputBox {
+    margin-left: 20px;
+    color: white;
+}
+
+.search {
+    height: 30px;
+    color: rgb(153, 148, 148);
 }
