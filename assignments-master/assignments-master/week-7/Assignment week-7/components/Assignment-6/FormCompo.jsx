@@ -22,6 +22,10 @@ export function FromComponent() {
         setShowOtpInput(true);
     };
 
+    function onOtpSubmit() {
+        alert("Otp Submitted Successfully");
+    }
+
     return (
         <div>
             {!showOtpInput ? <form onSubmit={handlePhoneSubmit}>
@@ -34,7 +38,7 @@ export function FromComponent() {
                 <button type="submit">Submit</button>
             </form> : <div>
                 <h1>Enter OTP Sent to {phoneNumber}</h1>
-                <OtpInput />
+                <OtpInput length={4} onOtpSubmit={onOtpSubmit} />
             </div>}
         </div>
     )
