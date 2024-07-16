@@ -15,3 +15,7 @@
     font-style: inherit;
     border-bottom: 1px dotted black;
 }
+
+.info {
+    padding-left: 25px;
+}
