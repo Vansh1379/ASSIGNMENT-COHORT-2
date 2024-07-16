@@ -23,7 +23,7 @@ export function FromComponent() {
 
     return (
         <div>
-            <form onSubmit={handlePhoneSubmit}>
+            {!showOtpInput ? <form onSubmit={handlePhoneSubmit}>
                 <input
                     type="text"
                     onChange={handlePhoneNumber}
@@ -31,7 +31,9 @@ export function FromComponent() {
                     placeholder="Enter your phone number"
                 />
                 <button type="submit">Submit</button>
-            </form>
+            </form> : <div>
+                <h1>Enter OTP Sent to {phoneNumber}</h1>
+            </div>}
         </div>
     )
 }
