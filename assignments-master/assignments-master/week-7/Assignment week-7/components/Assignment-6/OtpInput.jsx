@@ -18,7 +18,7 @@ export function OtpInput({ length, onOtpSubmit }) {
     }
 
     return (
-        <div>
+        <div className="input">
             {
                 otp.map((value, index) => {
                     return <input key={index} type="text" value={value}

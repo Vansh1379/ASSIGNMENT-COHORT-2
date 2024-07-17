@@ -27,7 +27,7 @@ export function FromComponent() {
     }
 
     return (
-        <div>
+        <div className="formCompo">
             {!showOtpInput ? <form onSubmit={handlePhoneSubmit}>
                 <input
                     type="text"
