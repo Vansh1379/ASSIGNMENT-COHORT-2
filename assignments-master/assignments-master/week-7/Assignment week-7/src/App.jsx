@@ -8,6 +8,7 @@ import { OtpGenerator } from '../components/Assignment-6/OtpGenerator';
 function App() {
   return (
     <div>
+      <GithubInfoCard />
       <OtpGenerator />
     </div>
   );
